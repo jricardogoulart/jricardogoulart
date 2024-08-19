@@ -1,4 +1,4 @@
-# 🌌 About Me:
+# 📌 About Me:
 🎓 Graduação<br>“Último ano de Análise e Desenvolvimento de Sistemas.”<br><br>📚 Sempre estudando<br>“Focado em aprimorar minhas habilidades de programação.”<br><br>🌱 Interesses<br>“Explorando front-end, back-end e design UX/UI.”
 
 
