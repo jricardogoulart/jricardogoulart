@@ -1,5 +1,5 @@
 # Hey, I'm José Goulart 👋
-### Software Engineer Analyst & IT Instructor
+### Software Developer & Analyst 
 
 <div> 
   <a href="https://www.linkedin.com/in/jricardogoulart/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a> 
