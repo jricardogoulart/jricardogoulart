@@ -1,0 +1,276 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 880" width="840" height="880" style="background:#0d1117; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif;">
+  <defs>
+    <linearGradient id="tileGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#161b22" />
+      <stop offset="100%" stop-color="#10151e" />
+    </linearGradient>
+
+    <linearGradient id="barGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#238636" />
+      <stop offset="100%" stop-color="#39d353" />
+    </linearGradient>
+
+    <linearGradient id="cyanBarGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <filter id="tileGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+
+    <style>
+      @keyframes countFade {
+        from { opacity: 0; transform: translateY(8px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes barGrow {
+        from { transform: scaleY(0); }
+        to { transform: scaleY(1); }
+      }
+      @keyframes pulseDot {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.3; }
+      }
+      .anim-tile {
+        animation: countFade 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+      .bar-grow {
+        transform-origin: bottom;
+        animation: barGrow 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+      }
+      .pulse-online {
+        animation: pulseDot 2s infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Terminal Window Background -->
+  <rect x="1" y="1" width="838" height="878" rx="14" fill="#0d1117" stroke="#30363d" stroke-width="2" />
+
+  <!-- Terminal Header / Titlebar -->
+  <path d="M 1 14 Q 1 1 14 1 L 826 1 Q 839 1 839 14 L 839 42 L 1 42 Z" fill="#161b22" />
+  <line x1="1" y1="42" x2="839" y2="42" stroke="#30363d" stroke-width="1.5" />
+
+  <!-- Traffic Light Dots -->
+  <circle cx="28" cy="22" r="6.5" fill="#ff5f56" stroke="#e0443e" stroke-width="0.5" />
+  <circle cx="48" cy="22" r="6.5" fill="#ffbd2e" stroke="#dea123" stroke-width="0.5" />
+  <circle cx="68" cy="22" r="6.5" fill="#27c93f" stroke="#1aab29" stroke-width="0.5" />
+
+  <!-- Terminal Title -->
+  <text x="420" y="27" fill="#7d8590" font-size="13" font-family="'JetBrains Mono', monospace" font-weight="600" text-anchor="middle">
+    jricardo@dev-machine: ~/stats.sh -u jricardogoulart
+  </text>
+
+  <!-- ==================== 6 STAT TILES (2 COLS x 3 ROWS) ==================== -->
+
+  <!-- ROW 1, COL 1: Total Contributions -->
+  <g transform="translate(30, 64)" class="anim-tile">
+    <rect width="375" height="135" rx="12" fill="url(#tileGrad)" stroke="#30363d" stroke-width="1.2" filter="url(#tileGlow)" />
+    <text x="24" y="36" fill="#7d8590" font-size="12" font-family="'JetBrains Mono', monospace" font-weight="600">
+      TOTAL CONTRIBUTIONS
+    </text>
+    <text x="24" y="92" fill="#39d353" font-size="44" font-family="'JetBrains Mono', monospace" font-weight="800">
+      1,420+
+    </text>
+    <text x="24" y="118" fill="#57ab5a" font-size="11" font-family="'JetBrains Mono', monospace">
+      ▲ Continuous activity across Git repos
+    </text>
+    <!-- Icon right -->
+    <circle cx="325" cy="40" r="16" fill="#1b4728" />
+    <path d="M320 40 L323 44 L331 35" stroke="#39d353" stroke-width="2.5" fill="none" stroke-linecap="round" />
+  </g>
+
+  <!-- ROW 1, COL 2: Current Streak -->
+  <g transform="translate(435, 64)" class="anim-tile" style="animation-delay: 0.1s;">
+    <rect width="375" height="135" rx="12" fill="url(#tileGrad)" stroke="#30363d" stroke-width="1.2" filter="url(#tileGlow)" />
+    <text x="24" y="36" fill="#7d8590" font-size="12" font-family="'JetBrains Mono', monospace" font-weight="600">
+      CURRENT STREAK
+    </text>
+    <text x="24" y="92" fill="#38bdf8" font-size="44" font-family="'JetBrains Mono', monospace" font-weight="800">
+      42 <tspan font-size="22" font-weight="500" fill="#94a3b8">days</tspan>
+    </text>
+    <text x="24" y="118" fill="#38bdf8" font-size="11" font-family="'JetBrains Mono', monospace">
+      ● Daily commits &amp; maintenance
+    </text>
+    <!-- Fire Icon right -->
+    <circle cx="325" cy="40" r="16" fill="#0c4a6e" />
+    <path d="M325 30 Q321 36 321 42 Q321 48 325 48 Q329 48 329 42 Q329 36 325 30 Z" fill="#38bdf8" />
+  </g>
+
+  <!-- ROW 2, COL 1: Longest Streak -->
+  <g transform="translate(30, 219)" class="anim-tile" style="animation-delay: 0.2s;">
+    <rect width="375" height="135" rx="12" fill="url(#tileGrad)" stroke="#30363d" stroke-width="1.2" filter="url(#tileGlow)" />
+    <text x="24" y="36" fill="#7d8590" font-size="12" font-family="'JetBrains Mono', monospace" font-weight="600">
+      LONGEST STREAK
+    </text>
+    <text x="24" y="92" fill="#f2cc60" font-size="44" font-family="'JetBrains Mono', monospace" font-weight="800">
+      86 <tspan font-size="22" font-weight="500" fill="#94a3b8">days</tspan>
+    </text>
+    <text x="24" y="118" fill="#c69026" font-size="11" font-family="'JetBrains Mono', monospace">
+      ★ Personal consistency record
+    </text>
+    <!-- Trophy Icon right -->
+    <circle cx="325" cy="40" r="16" fill="#594314" />
+    <path d="M320 34 H330 V38 Q330 43 325 43 Q320 43 320 38 Z M325 43 V46 M322 46 H328" stroke="#f2cc60" stroke-width="2" fill="none" />
+  </g>
+
+  <!-- ROW 2, COL 2: Projects & Repositories -->
+  <g transform="translate(435, 219)" class="anim-tile" style="animation-delay: 0.3s;">
+    <rect width="375" height="135" rx="12" fill="url(#tileGrad)" stroke="#30363d" stroke-width="1.2" filter="url(#tileGlow)" />
+    <text x="24" y="36" fill="#7d8590" font-size="12" font-family="'JetBrains Mono', monospace" font-weight="600">
+      ACTIVE REPOSITORIES
+    </text>
+    <text x="24" y="92" fill="#a78bfa" font-size="44" font-family="'JetBrains Mono', monospace" font-weight="800">
+      18+
+    </text>
+    <text x="24" y="118" fill="#a78bfa" font-size="11" font-family="'JetBrains Mono', monospace">
+      ◆ Web apps, utilities &amp; platforms
+    </text>
+    <!-- Repo icon right -->
+    <circle cx="325" cy="40" r="16" fill="#3b2d54" />
+    <rect x="319" y="33" width="12" height="14" rx="2" stroke="#a78bfa" stroke-width="1.8" fill="none" />
+  </g>
+
+  <!-- ROW 3, COL 1: Core Technologies -->
+  <g transform="translate(30, 374)" class="anim-tile" style="animation-delay: 0.4s;">
+    <rect width="375" height="135" rx="12" fill="url(#tileGrad)" stroke="#30363d" stroke-width="1.2" filter="url(#tileGlow)" />
+    <text x="24" y="36" fill="#7d8590" font-size="12" font-family="'JetBrains Mono', monospace" font-weight="600">
+      PRIMARY STACK
+    </text>
+    <text x="24" y="80" fill="#f8fafc" font-size="22" font-family="'JetBrains Mono', monospace" font-weight="700">
+      React · Node · Python
+    </text>
+    <text x="24" y="114" fill="#38bdf8" font-size="12" font-family="'JetBrains Mono', monospace">
+      Docker · SQL · Linux · TypeScript
+    </text>
+    <circle cx="325" cy="40" r="16" fill="#1e293b" />
+    <text x="325" y="45" fill="#38bdf8" font-size="14" font-weight="800" text-anchor="middle">&lt;/&gt;</text>
+  </g>
+
+  <!-- ROW 3, COL 2: System Status & Availability -->
+  <g transform="translate(435, 374)" class="anim-tile" style="animation-delay: 0.5s;">
+    <rect width="375" height="135" rx="12" fill="url(#tileGrad)" stroke="#30363d" stroke-width="1.2" filter="url(#tileGlow)" />
+    <text x="24" y="36" fill="#7d8590" font-size="12" font-family="'JetBrains Mono', monospace" font-weight="600">
+      DEVELOPER STATUS
+    </text>
+    <g transform="translate(24, 76)">
+      <circle cx="8" cy="-5" r="6" fill="#22c55e" class="pulse-online" />
+      <text x="26" y="0" fill="#22c55e" font-size="20" font-family="'JetBrains Mono', monospace" font-weight="800">AVAILABLE</text>
+    </g>
+    <text x="24" y="114" fill="#94a3b8" font-size="12" font-family="'JetBrains Mono', monospace">
+      Open for collaborations &amp; builds
+    </text>
+    <circle cx="325" cy="40" r="16" fill="#143b22" />
+    <circle cx="325" cy="40" r="6" fill="#22c55e" />
+  </g>
+
+  <!-- ==================== MONTHLY CONTRIBUTIONS BAR CHART ==================== -->
+  <g transform="translate(30, 535)">
+    <rect width="780" height="295" rx="14" fill="url(#tileGrad)" stroke="#30363d" stroke-width="1.2" filter="url(#tileGlow)" />
+
+    <!-- Chart Title -->
+    <text x="28" y="36" fill="#f8fafc" font-size="15" font-family="'JetBrains Mono', monospace" font-weight="700">
+      Monthly Commit Cadence (2025 – 2026)
+    </text>
+    <text x="752" y="36" text-anchor="end" fill="#7d8590" font-size="12" font-family="'JetBrains Mono', monospace">
+      avg: 125 commits/mo
+    </text>
+
+    <!-- Chart Baseline & Gridlines -->
+    <line x1="28" y1="230" x2="752" y2="230" stroke="#30363d" stroke-width="1" />
+    <line x1="28" y1="170" x2="752" y2="170" stroke="#21262d" stroke-dasharray="3 3" />
+    <line x1="28" y1="110" x2="752" y2="110" stroke="#21262d" stroke-dasharray="3 3" />
+
+    <!-- Bars for 12 Months -->
+    <!-- Col width ~ 42px, Gap ~ 18px -->
+    <!-- Jan -->
+    <g transform="translate(48, 230)">
+      <rect x="0" y="-105" width="38" height="105" rx="4" fill="url(#cyanBarGrad)" class="bar-grow" />
+      <text x="19" y="22" fill="#7d8590" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle">JAN</text>
+    </g>
+
+    <!-- Feb -->
+    <g transform="translate(108, 230)">
+      <rect x="0" y="-135" width="38" height="135" rx="4" fill="url(#barGrad)" class="bar-grow" style="animation-delay: 0.05s;" />
+      <text x="19" y="22" fill="#7d8590" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle">FEB</text>
+    </g>
+
+    <!-- Mar -->
+    <g transform="translate(168, 230)">
+      <rect x="0" y="-120" width="38" height="120" rx="4" fill="url(#barGrad)" class="bar-grow" style="animation-delay: 0.1s;" />
+      <text x="19" y="22" fill="#7d8590" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle">MAR</text>
+    </g>
+
+    <!-- Apr -->
+    <g transform="translate(228, 230)">
+      <rect x="0" y="-95" width="38" height="95" rx="4" fill="url(#cyanBarGrad)" class="bar-grow" style="animation-delay: 0.15s;" />
+      <text x="19" y="22" fill="#7d8590" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle">APR</text>
+    </g>
+
+    <!-- May -->
+    <g transform="translate(288, 230)">
+      <rect x="0" y="-145" width="38" height="145" rx="4" fill="url(#barGrad)" class="bar-grow" style="animation-delay: 0.2s;" />
+      <text x="19" y="22" fill="#7d8590" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle">MAY</text>
+    </g>
+
+    <!-- Jun -->
+    <g transform="translate(348, 230)">
+      <rect x="0" y="-115" width="38" height="115" rx="4" fill="url(#cyanBarGrad)" class="bar-grow" style="animation-delay: 0.25s;" />
+      <text x="19" y="22" fill="#7d8590" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle">JUN</text>
+    </g>
+
+    <!-- Jul -->
+    <g transform="translate(408, 230)">
+      <rect x="0" y="-160" width="38" height="160" rx="4" fill="url(#barGrad)" class="bar-grow" style="animation-delay: 0.3s;" />
+      <text x="19" y="22" fill="#7d8590" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle">JUL</text>
+    </g>
+
+    <!-- Aug -->
+    <g transform="translate(468, 230)">
+      <rect x="0" y="-130" width="38" height="130" rx="4" fill="url(#cyanBarGrad)" class="bar-grow" style="animation-delay: 0.35s;" />
+      <text x="19" y="22" fill="#7d8590" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle">AUG</text>
+    </g>
+
+    <!-- Sep -->
+    <g transform="translate(528, 230)">
+      <rect x="0" y="-150" width="38" height="150" rx="4" fill="url(#barGrad)" class="bar-grow" style="animation-delay: 0.4s;" />
+      <text x="19" y="22" fill="#7d8590" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle">SEP</text>
+    </g>
+
+    <!-- Oct -->
+    <g transform="translate(588, 230)">
+      <rect x="0" y="-170" width="38" height="170" rx="4" fill="url(#barGrad)" class="bar-grow" style="animation-delay: 0.45s;" />
+      <text x="19" y="22" fill="#39d353" font-weight="700" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle">OCT</text>
+    </g>
+
+    <!-- Nov -->
+    <g transform="translate(648, 230)">
+      <rect x="0" y="-125" width="38" height="125" rx="4" fill="url(#cyanBarGrad)" class="bar-grow" style="animation-delay: 0.5s;" />
+      <text x="19" y="22" fill="#7d8590" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle">NOV</text>
+    </g>
+
+    <!-- Dec -->
+    <g transform="translate(708, 230)">
+      <rect x="0" y="-140" width="38" height="140" rx="4" fill="url(#barGrad)" class="bar-grow" style="animation-delay: 0.55s;" />
+      <text x="19" y="22" fill="#7d8590" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle">DEC</text>
+    </g>
+
+    <!-- Legend -->
+    <g transform="translate(28, 266)" font-family="'JetBrains Mono', monospace" font-size="11" fill="#7d8590">
+      <rect x="0" y="2" width="10" height="10" rx="2" fill="#39d353" />
+      <text x="18" y="11">Production Code</text>
+      <rect x="150" y="2" width="10" height="10" rx="2" fill="#38bdf8" />
+      <text x="168" y="11">Architecture &amp; Infra</text>
+    </g>
+  </g>
+
+  <!-- Terminal Status Footer -->
+  <g transform="translate(30, 856)" font-family="'JetBrains Mono', monospace" font-size="12" fill="#7d8590">
+    <text x="0" y="0">
+      <tspan fill="#39d353">●</tspan> status: synced · branch: main · latency: 18ms
+    </text>
+    <text x="780" y="0" text-anchor="end" fill="#38bdf8">uptime: 99.9%</text>
+  </g>
+
+</svg>
