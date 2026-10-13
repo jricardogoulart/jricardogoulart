@@ -22,6 +22,14 @@
 
 ---
 
+<div align="center">
+  <h3><code>jricardo@github ~ $ whoami</code></h3>
+
+  <img src="./ricardo-ascii.svg" width="620" alt="Ricardo Goulart — Animated ASCII Portrait" />
+</div>
+
+<br>
+
 ### <code>jricardo@github ~ $ whoami --verbose</code>
 
 ```json
