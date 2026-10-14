@@ -5,7 +5,7 @@
 
   <!-- Animated Typing Tagline -->
   <a href="https://github.com/jricardogoulart">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=38BDF8&center=true&vCenter=true&width=680&lines=Software+Developer+%26+Systems+Analyst;Full+Stack+Development+%E2%80%A2+Clean+Architecture;React+%E2%80%A2+TypeScript+%E2%80%A2+Node.js+%E2%80%A2+Python;Graduated+at+Fatec+Franca+%F0%9F%8E%93;Turning+complex+problems+into+elegant+code" alt="Typing Tagline" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=38BDF8&center=true&vCenter=true&width=680&lines=Software+Developer+%26+Systems+Analyst;Full+Stack+Development+%E2%80%A2+Clean+Architecture;React+%E2%80%A2+TypeScript+%E2%80%A2+Node.js;Graduated+at+Fatec+Franca+%F0%9F%8E%93;Turning+complex+problems+into+elegant+code" alt="Typing Tagline" />
   </a>
 
   <br>
@@ -34,7 +34,7 @@
 
 ```json
 {
-  "name": "Ricardo Goulart",
+  "name": "José Ricardo Goulart",
   "title": "Software Developer & Systems Analyst",
   "education": "System Analysis and Development @ FATEC Franca",
   "location": "Franca, SP - Brazil 🇧🇷",
@@ -44,7 +44,7 @@
     "Crafting performant, accessible and fluid user interfaces",
     "Writing clean, maintainable and well-documented code"
   ],
-  "current_focus": "Engineering modern web solutions with React, TypeScript, Node.js and Python",
+  "current_focus": "Engineering modern web solutions with React, TypeScript and Node.js",
   "status": "Available for high-impact software engineering opportunities"
 }
 ```
@@ -57,9 +57,8 @@
 
 <p align="center">
   <b>Languages &amp; Core</b><br>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
   <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL" />
@@ -112,7 +111,7 @@
 
   <!-- Top Languages Card -->
   <p align="center">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jricardogoulart&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=38bdf8&text_color=94a3b8" alt="Top Languages" />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jricardogoulart&exclude_repo=project-portifolio&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=38bdf8&text_color=94a3b8" alt="Top Languages" />
   </p>
 
 </div>
