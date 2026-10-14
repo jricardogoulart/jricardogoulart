@@ -1,7 +1,7 @@
 <div align="center">
 
   <!-- Header Banner -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,12,24&height=180&section=header&text=José%20Ricardo%20Goulart&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=Software%20Developer%20%E2%80%A2%20Systems%20Analyst&descAlignY=60&descSize=18" width="100%" alt="Ricardo Goulart Banner" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,12,24&height=180&section=header&text=Jos%C3%A9%20Ricardo%20Goulart&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=Software%20Developer%20%E2%80%A2%20Systems%20Analyst&descAlignY=60&descSize=18" width="100%" alt="José Ricardo Goulart Banner" />
 
   <!-- Animated Typing Tagline -->
   <a href="https://github.com/jricardogoulart">
@@ -12,7 +12,7 @@
 
   <!-- Profile Metrics & Status Badges -->
   <p>
-    <img src="https://komarev.com/ghpvc/?username=jricardogoulart&label=Profile%20Views&color=0ea5e9&style=flat-square" alt="Profile Views" />
+    <img src="https://api.visitorbadge.io/api/visitors?path=jricardogoulart&label=Profile%20Views&labelColor=0369a1&countColor=0ea5e9&style=flat-square" alt="Profile Views" />
     <img src="https://img.shields.io/badge/Status-Building%20%26%20Innovating-0284c7?style=flat-square" alt="Status" />
     <img src="https://img.shields.io/badge/Focus-Full%20Stack%20%26%20Architecture-0369a1?style=flat-square" alt="Focus" />
     <img src="https://img.shields.io/badge/Location-Brazil%20%F0%9F%87%A7%F0%9F%87%B7-075985?style=flat-square" alt="Location" />
